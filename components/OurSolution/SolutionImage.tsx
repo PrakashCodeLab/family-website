@@ -3,14 +3,16 @@
 import React from "react";
 import Styles from "./OurSolution.module.scss";
 import Image from "next/image";
-import solimage1 from "/public/images/solChild1.jpg";
-import solimage2 from "/public/images/solChild2.jpg";
-import solimage3 from "/public/images/solChild3.jpg";
-import { motion} from "framer-motion";
+import solimage1 from "../../public/images/solutionchild-1.jpg";
+import solimage2 from "../../public/images/solutionchild-2.jpg";
+import solimage3 from "../../public/images/solutionchild-3.jpg";
+import { motion} from "framer-motion"; 
 import {
   ImageSolAnimation1,
   ImageSolAnimation2,
 } from "@/constants/AnimationConst";
+
+
 const SolutionImage = () => {
   return (
     <div className={Styles.oursolution__image__container}>

@@ -1,0 +1,37 @@
+
+> next-auth-pro@0.1.0 build
+> next build
+
+- info Creating an optimized production build...
+- info Compiled successfully
+- info Linting and checking validity of types...
+- info Collecting page data...
+- info Generating static pages (0/4)
+- info Generating static pages (1/4)
+- info Generating static pages (2/4)
+- info Generating static pages (3/4)
+- info Generating static pages (4/4)
+- info Finalizing page optimization...
+
+Route (app)                                Size     First Load JS
+Γöî Γùï /                                      371 B           134 kB
+Γöö Γùï /icon.png                              0 B                0 B
++ First Load JS shared by all              138 kB
+  Γö£ chunks/142-9821ae271c063f71.js         44.8 kB
+  Γö£ chunks/353-d2c1fefad34fc14c.js         10.4 kB
+  Γö£ chunks/596-190777e57663ec8e.js         25.9 kB
+  Γö£ chunks/fd9d1056-fe8c62b67ebb5281.js    50.5 kB
+  Γö£ chunks/main-app-ddadc0169db23d3b.js    214 B
+  Γö£ chunks/webpack-7c8067908fac867a.js     1.71 kB
+  Γöö css/b39c74b9a018197c.css               4.78 kB
+
+Route (pages)                              Size     First Load JS
+ΓöÇ Γùï /404                                   182 B          75.7 kB
++ First Load JS shared by all              75.5 kB
+  Γö£ chunks/framework-8883d1e9be70c3da.js   45 kB
+  Γö£ chunks/main-3aef90b5a23ae58f.js        28.6 kB
+  Γö£ chunks/pages/_app-52924524f99094ab.js  195 B
+  Γöö chunks/webpack-7c8067908fac867a.js     1.71 kB
+
+Γùï  (Static)  automatically rendered as static HTML (uses no initial props)
+

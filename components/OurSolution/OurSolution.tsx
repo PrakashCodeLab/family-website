@@ -5,8 +5,8 @@ import Heading from "../Heading/Heading";
 import Styles from "./OurSolution.module.scss";
 import Buttons from "../Buttons/Buttons";
 import ListCheck from "./ListCheck";
-import SolImage from "./SolImage";
-import { motion, spring } from "framer-motion";
+import SolImage from "./SolutionImage";
+import { motion} from "framer-motion";
 import { solContentAmination1 } from "@/constants/AnimationConst";
 
 const OurSolution = () => {

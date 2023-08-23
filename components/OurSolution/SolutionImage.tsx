@@ -6,18 +6,18 @@ import Image from "next/image";
 import solimage1 from "@/public/images/solChild1.jpg";
 import solimage2 from "@/public/images/solChild2.jpg";
 import solimage3 from "@/public/images/solChild3.jpg";
-import { motion, spring } from "framer-motion";
+import { motion} from "framer-motion";
 import {
   ImageSolAnimation1,
   ImageSolAnimation2,
 } from "@/constants/AnimationConst";
-const SolImage = () => {
+const SolutionImage = () => {
   return (
     <div className={Styles.oursolution__image__container}>
       <div className={Styles.Oursolution__img__portion} />
-      <div className={Styles.solution__img__left__container}>
+      <div className={Styles.solution__img__left__container}>   
         <motion.div
-          initial="hidden"
+          initial="hidden" 
           whileInView="show"
           variants={ImageSolAnimation1}
         >
@@ -76,4 +76,4 @@ const SolImage = () => {
   );
 };
 
-export default SolImage;
+export default SolutionImage;

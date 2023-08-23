@@ -1,0 +1,82 @@
+@import '/styles/variable.scss';
+
+.ourservice__container{
+   
+    @include flex-box(column ,center, center);
+    padding-top: 3rem;
+    .ourservice__section__one{
+        @include flex-box(column ,center, center);
+        gap: 1rem;
+        max-width: 500px;
+        .ourservice__heading{
+            text-transform: capitalize;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: $bg-primary;
+            text-align: center;
+        }
+        .ourservice__one__content{
+            font-size: 1rem;
+            font-weight: 400;
+            color: $charcol-text;
+            text-align: center;
+            line-height: 1.8rem;
+            max-width: 400px;
+           
+        }
+    }
+
+    .ourservice__section__two{
+          display: grid;
+          place-items: center;
+          grid-template-columns: repeat(3,auto);
+          gap: 50px;
+          margin-top: 3rem;
+          padding: 1rem;
+
+          @include screen-max($laptop-device){
+            grid-template-columns: repeat(2,auto);
+            padding-top: 4rem;
+          }
+
+          @include screen-max($tablet-device-larger){
+            grid-template-columns: repeat(1,auto);
+          }
+
+          .service__card__container{
+           
+            @include flex-box(row ,flex-start, flex-start);
+            gap: 1rem;
+            .service__card__image__section{
+                
+                @include flex-box(row ,center, center);
+                border-radius: 0.5rem;
+                width: 65px;
+                height: 65px;
+                padding: 0.5rem;
+               box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+              }
+
+              .service__card__content__section{
+                @include flex-box(column,flex-start, flex-start);
+                gap: 0.5rem;
+                .service__content__text{
+                    text-transform: capitalize;
+                    font-size: 1.2rem;
+                    color: $text-heading;
+                    font-weight: 700;
+                }
+                .service__content__lead{
+                    font-size: 0.9rem;
+                    max-width: 300px;
+                    color:$charcol-text;                  
+                    line-height: 1.5rem;
+                    font-weight: 300;
+
+                }
+              }     
+
+          }
+         
+    }
+}

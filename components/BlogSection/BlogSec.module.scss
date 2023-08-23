@@ -1,0 +1,129 @@
+@import '/styles/variable.scss';
+
+.blog__section__container {
+    @include flex-box(column, flex-start, flex-start);
+    gap: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 1rem;
+
+    .blog__content__body {
+        @include flex-box(column, flex-start, flex-start);
+        gap: 0.5rem;
+        max-width: pix-rem(400);
+        margin-bottom: 2rem;
+
+        .blog__content__heading {
+            text-transform: capitalize;
+            font-size: 2rem;
+            font-weight: 700;
+            color: $bg-primary;
+
+        }
+
+        .blog__body__lead {
+            font-size: 1rem;
+            font-weight: 300;
+            line-height: 2rem;
+            color: $text-blog;
+            text-align: justify;
+        }
+    }
+
+    .blog__card__section {
+        @include grid-center;
+        grid-template-columns: repeat(3, auto);
+        width: 100%;
+        gap: 2rem;
+
+        @include screen-max($desktop-device) {
+            grid-template-columns: repeat(2, auto);
+
+        }
+
+        @include screen-max($tablet-device-larger) {
+            grid-template-columns: repeat(1, auto);
+        }
+    }
+}
+
+
+
+
+
+
+/* BlogSec.module.scss */
+
+.blog__card {
+    max-width: pix-rem(350);
+    height: pix-rem(450);
+
+    @include flex-box(column, flex-start, flex-start);
+    background-color: $white-color;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+
+
+    .blog__image {
+        width: 100%;
+        height: pix-rem(250);
+        border-radius: 0.5rem;
+        object-fit: cover;
+        padding: 0.3em;
+    }
+
+    .blog__content__section {
+        @include flex-box(column, flex-start, flex-start);
+        padding: 0.5rem;
+        gap: 0.5rem;
+
+        .blog__content__heading {
+            text-transform: capitalize;
+            color: $text-heading;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            font-weight: 700;
+        }
+
+        .blog__content__lead {
+            padding: 0.3 rem;
+            text-align: justify;
+            line-height: 1.3rem;
+            font-size: 0.9rem;
+            color: $text-blog;
+        }
+    }
+
+
+
+    .blog__writer__section {
+        @include flex-box(row, flex-start, center);
+        gap: 1rem;
+
+        margin-top: 0.7rem;
+        border-radius: 0 0.5rem 0.5rem 0;
+        padding: 0.5rem;
+        background-color: $blog-writer-bg;
+    }
+
+    .blog__writer__image {
+        width: pix-rem(40);
+        height: pix-rem(40);
+        border-radius: 50%;
+
+        object-fit: cover;
+    }
+
+    .blog__writer__name {
+        font-size: 1rem;
+        font-weight: 700;
+        text-transform: capitalize;
+        color: $bg-primary;
+
+    }
+}

@@ -1,0 +1,146 @@
+@import '/styles/variable.scss';
+
+
+.hero__container {
+   display: grid;
+   justify-content: center;
+   align-items:center;
+   align-content: center;
+   grid-template-columns: repeat(2, auto);
+   min-height: calc(100dvh - pix-rem(100));
+   gap: 4rem;
+   
+
+   @include screen-max($desktop-device) {
+      grid-template-columns: repeat(1, auto);
+      place-items: center;
+      
+   }
+
+   .hero__content__section { 
+     width: 100%;
+      max-width: 600px;
+      padding: 1.5rem;
+      @include flex-box(column, center, flex-start);
+      gap: 1rem;
+      
+     
+      @include screen-max($laptop-device) {
+        
+         padding-top: 3rem;
+         width: 100%;
+         @include flex-box(column, center, flex-start);
+      
+      }
+
+
+      .hero__content__heading {
+         text-transform: capitalize;
+         font-weight: 700;
+         font-size: 2rem;
+         line-height: 3rem;
+         color: $text-heading;
+
+         
+      }
+
+      .hero__content__lead {
+         font-size: 1rem;
+         font-weight: 300;
+         line-height: 2rem;
+         color: #2F4F4F;
+         text-transform: none;
+         text-align: justify;
+         min-width: 350px;
+      
+
+      }
+
+      .hero__content__btn {
+         display: flex;
+         gap: 1rem;
+         padding-top: 1rem;
+
+         @include screen-max($laptop-device) {
+            padding-top: 1rem;
+         }
+      }
+   }
+
+   .hero__image__section {
+      padding: 1rem;
+      @include flex-box(column, center, center);
+
+      gap: 0.7rem;
+
+
+
+      .hero__image__section__one {
+         @include flex-box(row, flex-end, flex-end);
+
+         gap: 0.7rem;
+
+
+         .hero__image__one {
+            width: 100%;
+            max-width: pix-rem(500);
+            height: pix-rem(400);
+
+            .hero__image1 {
+               @include image-hero(100%, 100%);
+
+            }
+         }
+      }
+
+      .hero__image__two {
+         @include flex-box(row, flex-start, flex-end);
+
+         flex-flow: row wrap;
+         gap: 0.5rem;
+
+
+
+         .hero__portion__pink {
+            @include hero-portion(pix-rem(60), pix-rem(60), #FADCD2);
+
+
+
+         }
+
+         .hero__image2 {
+            @include image-hero(pix-rem(100), pix-rem(100));
+
+         }
+
+         .hero__image3 {
+            @include image-hero(pix-rem(200), pix-rem(200));
+
+         }
+      }
+
+      .hero__image__section__two {
+
+         @include flex-box(row, flex-start, flex-start);
+         gap: 0.5rem;
+
+         .hero__portion2 {
+            @include hero-portion-below(pix-rem(60), pix-rem(60), #b4d4d5);
+
+         }
+
+         .hero__image4 {
+            @include image-hero(pix-rem(100), pix-rem(100));
+
+
+         }
+
+         .hero__image5 {
+            @include image-hero(pix-rem(200), pix-rem(200));
+
+
+         }
+      }
+
+   }
+}

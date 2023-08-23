@@ -1,0 +1,118 @@
+@import '/styles/variable.scss';
+
+
+.getStarted__section {
+    @include flex-box(row, center, center);
+    gap: 100px;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    @include screen-max($desktop-device) {
+        flex-direction: column;
+        gap: pix-rem(25);
+        padding: 1em;
+    }
+
+    .getstarted__one__section {
+        flex: 1;
+        @include flex-box(row, center, center);
+        gap: 2rem;
+        padding-top: 5rem;
+        margin-bottom: 3rem;
+        .getstarted__review__heading {
+            @include flex-box(column, center, center);
+
+            gap: 1rem;
+
+            .getstarted__review__text {
+                font-size: 3rem;
+                font-weight: 800;
+                color: $bg-primary;
+                align-items: center;
+                text-align: center;
+
+                @include screen-max($tablet-device-larger) {
+                    font-size: 2rem;
+
+                }
+            }
+
+            .getstarted__rating__lead {
+                font-size: 1rem;
+                font-weight: 500;
+                color: $bg-primary;
+                line-height: 1.5em;
+                align-items: center;
+                text-align: center;
+                text-transform: capitalize;
+                @include screen-max($tablet-device-larger) {
+                    font-size: 0.8rem;
+
+                }
+            }
+        }
+    }
+}
+
+
+.getstarted__section__card {
+    background-color:$bg-card-background; 
+    gap: 25px; 
+    flex: 1;
+    @include flex-box(row, center, center);
+    border-radius: 0.6rem;
+    height: pix-rem(200);
+    max-width: pix-rem(500);
+
+    @include screen-max($laptop-device) {
+        max-width: pix-rem(400);
+        
+    }
+
+    .getStarted__card {
+        @include flex-box(column, center, flex-start);
+        
+        padding: 0.6rem;
+
+        .getstarted__card__title {
+            text-transform: capitalize;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: $bg-primary;
+            padding-bottom: pix-rem(10);
+
+            @include screen-max($tablet-device-larger) {
+                font-size: 1em;
+
+            }
+        }
+
+        .getstarted__card__lead {
+            text-transform: capitalize;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            color:$charcol-text;
+            padding-bottom: pix-rem(10);
+
+            @include screen-max($tablet-device-larger) {
+                font-size: 0.8rem;
+
+            }
+        }
+
+    }
+
+
+    .getstarted__card__illustartion {
+        width: pix-rem(100);
+        height: fit-content;
+
+        .getstarted__card__imageSvg {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: scale(1.5);
+
+        }
+    }
+}

@@ -1,0 +1,59 @@
+@import '/styles//variable.scss';
+
+
+.logo__section {
+    width: fit-content;
+    height: auto;
+
+    @include flex-box(row, center, center);
+    gap: 0.2rem;
+
+    // Left section...
+
+    .logo__left__section {
+        width: pix-rem(50);
+        @include flex-box(row, flex-start, center);
+
+        position: relative;
+
+        .logo__left__circle__merown {
+            @include bg-circles(pix-rem(30), pix-rem(30), 50%, $bg-primary);
+
+            position: absolute;
+        }
+
+        .left__logo__circle__blue {
+            @include bg-circles(pix-rem(30), pix-rem(30), 50%, $bg-secondary);
+            transform: translateX(pix-rem(15));
+
+        }
+    }
+
+    // Right section...
+
+
+    .logo__right__section {
+        @include flex-box(row, center, center);
+
+        // Logo text...
+
+        .logo__right__lead {
+            text-transform: capitalize;
+            font-size: 1.5rem;
+            @include flex-box(row, center, center);
+            font-weight: 700;
+            color: $bg-primary;
+
+
+
+            .logo__right__basetext {
+
+
+                .logo__right__dot {
+                    color: $logo-dot;
+                }
+            }
+
+        }
+    }
+}

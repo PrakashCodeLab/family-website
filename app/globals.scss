@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+
+body {
+    width: 100%;
+    min-height: 100dvh;
+    scroll-behavior: smooth;
+    background-color: #F9F9F8;
+}
+
+.body__wrapper {
+    width: 100%;
+    max-width: 1280px;
+    min-height: 100dvh;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+
+.body__overflow {
+    overflow: hidden;
+
+}

@@ -1,0 +1,24 @@
+@import '/styles//variable.scss';
+
+.heading{
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 1rem;
+    color: $text-heading;
+    position: relative;
+    width: 200px;
+    
+    padding: 0.1rem;
+    z-index: 1;
+    &::before , &::after{
+        content: "";
+        width: 50%;
+        height: 100%;
+        background-color:$text-pink;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: 0 0.4rem 0.4rem 0;
+    }
+}

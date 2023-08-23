@@ -1,0 +1,65 @@
+@mixin flex-box($flex-dir, $content, $items) {
+    display: flex;
+    flex-direction: $flex-dir;
+    justify-content: $content;
+    align-items: $items;
+}
+
+@mixin grid-center{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    align-content: center; 
+}
+
+@mixin bg-circles($width, $height, $border-radius, $background) {
+    width: $width;
+    height: $height;
+    border-radius: $border-radius;
+    background-color: $background;
+}
+
+@mixin image-hero ($width, $height){
+    width: $width;
+    height: $height;
+    object-fit: cover;
+    border-radius: 0.7rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+ 
+ }
+ 
+ @mixin hero-portion($width ,$height,$bgcolor ){
+    width:$width;
+    height: $height;
+    background-color:$bgcolor ;
+   border-top-left-radius: 0.5rem;
+   border-top-right-radius: 60%;
+   border-bottom-left-radius: 0.5rem;
+   border-bottom-right-radius: 0.5rem;
+ }
+
+ @mixin hero-portion-below($width ,$height,$bgcolor ) {
+    width:$width;
+    height: $height;
+    background-color:$bgcolor ;
+    border-radius:60% 0.4rem 0.4rem 0;
+}
+
+$moblie-device:480px;
+$tablet-device:640px;
+$tablet-device-larger:768px;
+$laptop-device:1024px;
+$desktop-device:1280px;
+
+@mixin screen-min($device){
+    @media screen and (min-width:$device){
+         @content;
+    }
+}
+
+@mixin screen-max($device){
+    @media screen and (max-width:$device){
+         @content;
+    }
+}
+

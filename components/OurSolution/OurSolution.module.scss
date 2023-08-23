@@ -1,0 +1,233 @@
+@import '/styles/variable.scss';
+
+$box-shadow :rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+.oursolution__container {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    @include flex-box(row, flex-start, flex-start);
+    gap: pix-rem(30);
+
+    @include screen-max($desktop-device) {
+        gap: pix-rem(50);
+        @include flex-box(column, flex-start, center);
+    }
+
+}
+
+.oursolution__image__container {
+
+    position: relative;
+    flex: 1;
+    z-index: 1;
+    @include flex-box(row, flex-start, flex-start);
+    gap: 0.4rem;
+
+    .Oursolution__img__portion {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 60%;
+        transform: scale(1.08) translateX(5px);
+        border-top-right-radius: 50%;
+        border-top-left-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+        height: 100%;
+        z-index: -3;
+        background-color: #f4f5f7;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+
+    .solution__img__left__container {
+        @include flex-box(column, flex-end, flex-end);
+        gap: 0.4rem;
+
+        .solution__image__one {
+
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 0.5rem;
+            box-shadow:$box-shadow ;
+
+            @include screen-max($tablet-device) {
+                width: 200px;
+                height: 200px;
+            }
+        }
+
+        .solution__image__one__bottom {
+            @include flex-box(row, flex-end, flex-start);
+
+            gap: 0.4rem;
+
+            .solution__portion1 {
+                width: 60px;
+                height: 60px;
+                background-color: #90EE90;
+                box-shadow: $box-shadow ;
+                border-radius: 13px 13px 13px 200px;
+                -moz-border-radius: 13px 13px 13px 200px;
+                -webkit-border-radius: 13px 13px 13px 200px;
+                border: 0px solid #000000;
+            }
+
+            .solution__image__two__bottom {
+                width: 180px;
+                height: 200px;
+                border-radius: 0.5rem;
+                object-fit: cover;
+                box-shadow:$box-shadow ;
+
+                @include screen-max($tablet-device) {
+                    width: 120px;
+                    height: 200px;
+                }
+            }
+
+
+        }
+
+
+
+    }
+
+
+    .oursolution__img__right__container {
+        @include flex-box(column, center, flex-start);
+
+        gap: 0.4rem;
+
+        .solution__portion__two {
+            width: 60px;
+            height: 60px;
+
+            border-radius: 20px 200px 20px 20px;
+            -moz-border-radius: 20px 200px 20px 20px;
+            -webkit-border-radius: 20px 200px 20px 20px;
+            border: 0px solid #000000;
+            background-color: #4682B4;
+            box-shadow:$box-shadow ;
+        }
+
+        .solution__image__left__one {
+            max-width: 300px;
+            height: 350px;
+            border-radius: 0.5rem;
+            object-fit: cover;
+            box-shadow:$box-shadow ;
+
+            @include screen-max($tablet-device) {
+                width: 250px;
+                height: 250px;
+            }
+        }
+
+        .solution__right__content {
+            background-color: #ffffff;
+            @include flex-box(column, flex-start, first baseline);
+
+            padding-left: 0.5rem;
+            width: 300px;
+            height: 80px;
+            border-radius: 0.5rem;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+            @include screen-max($tablet-device) {
+                font-size: 1rem;
+                width: 250px;
+            }
+        }
+    }
+
+
+}
+
+
+.oursolution__content__container {
+    flex: 1;
+    @include flex-box(column, flex-start, flex-start);
+    gap: 0.7rem;
+    padding: 1.5rem;
+
+    @include screen-max($desktop-device) {
+        justify-content: flex-start;
+        align-items: flex-start;
+        max-width: 600px;
+    }
+
+    .oursolution__content__heading {
+        text-transform: capitalize;
+        font-size: 2rem;
+        font-weight: 800;
+        color: $text-heading;
+        line-height: 2.8rem;
+        padding-top: 1rem;
+        padding-top: 1rem;
+
+    }
+
+    .oursolution__contenet__lead {
+        font-size: 1rem;
+        font-weight: 400;
+        color:$text-heading;
+        line-height: 1.5rem;
+        text-align: justify;
+
+    }
+
+    .oursolution__unorderlist {
+        display: grid;
+        justify-content: flex-start;
+        align-items: flex-start;
+        grid-template-columns: repeat(2, auto);
+        gap: 25px;
+        padding-top: 1.3rem;
+        padding-bottom: 1.3rem;
+
+        @include screen-max($tablet-device) {
+            grid-template-columns: repeat(1, auto);
+            justify-content: flex-start;
+            align-items: flex-start;
+
+        }
+    }
+
+    .btn__group {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 1rem;
+        padding-top: 1rem;
+    }
+}
+
+
+
+
+
+.oursolution__list {
+    @include flex-box(row, flex-start, flex-start);
+
+    gap: 0.7rem;
+    max-width: 250px;
+
+
+    .oursolution__list__lead {
+        text-transform: capitalize;
+        font-weight: 700;
+        font-size: 1rem;
+        color: $charcol-text;
+    }
+}
+
+.btn__primary {
+    background-color:$portion-colors--customer;
+    color: #000000;
+}
+
+.btn__secondary {
+    background-color: $bg-secondary;
+    color: $bg-text-primary;
+}

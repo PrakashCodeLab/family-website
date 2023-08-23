@@ -1,0 +1,33 @@
+@import '/styles/variable.scss';
+
+.navbar__link {
+
+    @include flex-box(row, center, center);
+
+    .mobile__lead {
+        text-transform: capitalize;
+        color: $text-heading;
+        font-weight: 400;
+
+    }
+
+    .mobile__icon {
+        opacity: 0;
+        visibility: hidden;
+
+    }
+
+    &:hover {
+        .mobile__icon {
+            opacity: 1;
+            visibility: visible;
+            transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out;
+
+            transform: translateX(3px);
+
+        }
+    }
+
+
+
+}

@@ -1,0 +1,18 @@
+@import '/styles/variable.scss';
+
+.btn{
+     text-transform: capitalize;
+     @include flex-box(row ,center, center);
+     padding: 0.8rem;
+     font-size: 1rem;
+     width: pix-rem(150);
+     transition: all 0.6s ease-in-out;
+     border-radius: 0.4rem;
+   &:hover{
+      
+      transform: translatey(-10px);
+     
+   }  
+}
+
+

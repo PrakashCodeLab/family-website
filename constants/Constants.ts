@@ -1,19 +1,18 @@
-import { LinkData } from "@/types/types";
-import imgTest1 from "@/public/images/person-1-min.webp";
-import imgTest2 from "@/public/images/person-2-min.webp";
-import imgTest3 from "@/public/images/person-3-min.webp";
-import BlogImg1 from "@/public/images/family-blog1.jpg";
-import BlogImg2 from "@/public/images/family-blog2.jpg";
-import BlogImg3 from "@/public/images/family-blog3.jpg";
-import BlogImg4 from "@/public/images/family-blog4.jpg";
-import BlogImg5 from "@/public/images/family-blog5.jpg";
-import BlogImg6 from "@/public/images/family-blog6.jpg";
-import WriterImg1 from "@/public/images/person-1-min.webp";
-import WriterImg2 from "@/public/images/person-2-min.webp";
-import WriterImg3 from "@/public/images/person-3-min.webp";
-import WriterImg4 from "@/public/images/person-2-min.webp";
-import WriterImg5 from "@/public/images/person-3-min.webp";
-import WriterImg6 from "@/public/images/person-1-min.webp";
+import imgTest1 from "/public/images/person-1-min.webp";
+import imgTest2 from "/public/images/person-2-min.webp";
+import imgTest3 from "/public/images/person-3-min.webp";
+import BlogImg1 from "/public/images/family-blog1.jpg";
+import BlogImg2 from "/public/images/family-blog2.jpg";
+import BlogImg3 from "/public/images/family-blog3.jpg";
+import BlogImg4 from "/public/images/family-blog4.jpg";
+import BlogImg5 from "/public/images/family-blog5.jpg";
+import BlogImg6 from "/public/images/family-blog6.jpg";
+import WriterImg1 from "/public/images/person-1-min.webp";
+import WriterImg2 from "/public/images/person-2-min.webp";
+import WriterImg3 from "/public/images/person-3-min.webp";
+import WriterImg4 from "/public/images/person-2-min.webp";
+import WriterImg5 from "/public/images/person-3-min.webp";
+import WriterImg6 from "/public/images/person-1-min.webp";
 
 export const linkNav = [
   { id: 1, title: "home", link: "/" },

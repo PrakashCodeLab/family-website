@@ -1,11 +1,11 @@
 import React from 'react';
 import Image from 'next/image';
 import Styles from "./Herosec.module.scss";
-import image1 from '@/public/images/hero-image1.jpg';
-import image2 from '@/public/images/hero-image2.jpg';
-import image3 from '@/public/images/hero-image3.jpg';
-import image4 from '@/public/images/hero-image4.jpg';
-import image5 from '@/public/images/hero-image5.jpg';
+import image1 from '/public/images/hero-image1.jpg';
+import image2 from '/public/images/hero-image2.jpg';
+import image3 from '/public/images/hero-image3.jpg';
+import image4 from '/public/images/hero-image4.jpg';
+import image5 from '/public/images/hero-image5.jpg';
 import { motion } from 'framer-motion';
 
 const HeroImage = () => {

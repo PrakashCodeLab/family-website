@@ -3,9 +3,9 @@
 import React from "react";
 import Styles from "./OurSolution.module.scss";
 import Image from "next/image";
-import solimage1 from "@/public/images/solChild1.jpg";
-import solimage2 from "@/public/images/solChild2.jpg";
-import solimage3 from "@/public/images/solChild3.jpg";
+import solimage1 from "/public/images/solChild1.jpg";
+import solimage2 from "/public/images/solChild2.jpg";
+import solimage3 from "/public/images/solChild3.jpg";
 import { motion} from "framer-motion";
 import {
   ImageSolAnimation1,

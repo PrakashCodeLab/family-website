@@ -2,12 +2,12 @@
 
 import React from "react";
 import Heading from "../Heading/Heading";
-import Icon1 from "@/public/images/icon-1.svg";
-import Icon2 from "@/public/images/icon-2.svg";
-import Icon3 from "@/public/images/icon-3.svg";
-import Icon4 from "@/public/images/icon-4.svg";
-import Icon5 from "@/public/images/icon-5.svg";
-import Icon6 from "@/public/images/icon-6.svg";
+import Icon1 from "/public/images/icon-1.svg";
+import Icon2 from "/public/images/icon-2.svg";
+import Icon3 from "/public/images/icon-3.svg";
+import Icon4 from "/public/images/icon-4.svg";
+import Icon5 from "/public/images/icon-5.svg";
+import Icon6 from "/public/images/icon-6.svg";
 import ServiceCard from "./ServiceCard";
 import Styles from "./OurServices.module.scss";
 import { motion } from "framer-motion";

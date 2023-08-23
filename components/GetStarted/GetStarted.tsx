@@ -3,7 +3,7 @@
 import React, { useRef } from "react";
 import LearnMore from "../LearnMore.tsx/LearnMore";
 import Image from "next/image";
-import WomenIllustration from "@/public/images/illustration-woman.svg";
+import WomenIllustration from "/public/images/illustration-woman.svg";
 import Styles from "./GetStarted.module.scss";
 import Rating from "./Rating";
 import { motion } from "framer-motion";
